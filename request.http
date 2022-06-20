@@ -1,0 +1,35 @@
+###
+//inserción de registros
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+ "NombreJuego": "Final Fantasy",
+ "Tipo": "Roles Playing Game"
+
+
+}
+
+###
+//Consulta de Registros
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+//obtener un solo registro
+GET http://localhost:9000/api/users/<ID MongoDB> HTTP/1.1
+
+###
+//Modificar registro
+
+PUT  http://localhost:9000/api/users/<ID Registro MongoDB> HTTP/1.1
+Content-Type: application/json
+
+{
+ "NombreJuego": "Final Fantasy VII",
+ "Tipo": "Role Playing Game"
+
+}
+
+###
+//borrado de un registro
+DELETE http://localhost:9000/api/users/<ID MongoDB> HTTP/1.1
